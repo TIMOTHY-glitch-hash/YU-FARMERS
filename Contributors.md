@@ -34,5 +34,5 @@ Task references (FR#) point back to `SRS.md`.
 ---
 **Notes for the team:**
 
-- If someone finishes early, pull from "Shared" rather than idling
+- If someone finishes early, pull from "Shared" rather than relaxing
 - Flag blockers early in your team channel — with a hard hackathon deadline, a half-day stuck on one task usually means dropping a stretch feature, not pushing the deadline

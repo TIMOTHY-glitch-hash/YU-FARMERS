@@ -1,4 +1,4 @@
-# Agricultural Marketplace — Hackathon MVP
+# Agricultural Marketplace —  MVP
 
 Connects smallholder farmers to buyers (restaurants, retailers, wholesalers) so farmers get better prices and buyers find reliable supply — without relying on middlemen or informal networks.
 
@@ -59,4 +59,4 @@ Connected to Vercel — pushes to `main` deploy automatically, and pull requests
 
 ## Status
 
-Hackathon MVP — see `SRS.md` for what's built vs. what's stretch/future work.
+MVP — see `SRS.md` for what's built vs. what's stretch/future work.

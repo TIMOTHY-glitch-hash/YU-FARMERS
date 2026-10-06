@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600;700&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-primary-fixed": "#002114", "on-tertiary-fixed": "#002114", "surface-tint": "#3f6653", "error": "#ba1a1a", "tertiary-container": "#00452e", "inverse-surface": "#2e312f", "outline": "#717973", "on-surface-variant": "#414844", "secondary-fixed": "#ffdcc3", "surface-variant": "#e2e3e0", "secondary-fixed-dim": "#ffb77d", "on-tertiary-fixed-variant": "#0e5138", "on-primary-fixed-variant": "#274e3d", "primary": "#012d1d", "on-secondary": "#ffffff", "surface-dim": "#d9dad7", "on-tertiary-container": "#75b393", "surface-bright": "#f9faf7", "surface": "#f9faf7", "primary-fixed-dim": "#a5d0b9", "on-tertiary": "#ffffff", "on-secondary-container": "#663500", "error-container": "#ffdad6", "primary-fixed": "#c1ecd4", "inverse-primary": "#a5d0b9", "tertiary-fixed": "#b1f0ce", "on-surface": "#191c1b", "on-secondary-fixed": "#2f1500", "surface-container-highest": "#e2e3e0", "on-primary": "#ffffff", "background": "#f9faf7", "secondary-container": "#fe932c", "on-primary-container": "#86af99", "inverse-on-surface": "#f0f1ee", "surface-container-high": "#e7e8e6", "on-secondary-fixed-variant": "#6e3900", "secondary": "#904d00", "primary-container": "#1b4332", "on-error": "#ffffff", "tertiary-fixed-dim": "#95d4b3", "outline-variant": "#c1c8c2", "surface-container-low": "#f3f4f1", "on-background": "#191c1b", "surface-container": "#edeeeb", "tertiary": "#002d1c", "surface-container-lowest": "#ffffff", "on-error-container": "#93000a" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "margin-desktop": "2.5rem", "space-sm": "0.5rem", "margin-tablet": "1.5rem", "margin": "1rem", "space-xs": "0.25rem", "gutter-desktop": "1.5rem", "space-xl": "2.5rem", "gutter": "1rem", "space-lg": "1.5rem", "space-md": "1rem" }, "fontFamily": { "label-md": ["Public Sans"], "label-sm": ["Public Sans"], "body-md": ["Public Sans"], "headline-lg": ["Space Grotesk"], "headline-md": ["Space Grotesk"], "label-lg": ["Public Sans"], "body-sm": ["Public Sans"], "display-lg": ["Space Grotesk"], "headline-lg-mobile": ["Space Grotesk"], "headline-sm": ["Space Grotesk"], "title-lg": ["Public Sans"], "title-md": ["Public Sans"], "body-lg": ["Public Sans"] }, "fontSize": { "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.03em", "fontWeight": "600"}], "label-sm": ["11px", {"lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700"}], "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}], "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.015em", "fontWeight": "600"}], "headline-md": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600"}], "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600"}], "body-sm": ["12px", {"lineHeight": "18px", "fontWeight": "400"}], "display-lg": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}], "headline-lg-mobile": ["26px", {"lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "600"}], "headline-sm": ["20px", {"lineHeight": "28px", "fontWeight": "600"}], "title-lg": ["18px", {"lineHeight": "26px", "fontWeight": "600"}], "title-md": ["16px", {"lineHeight": "24px", "fontWeight": "600"}], "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-background font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-20 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="AgriLink Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdryaOneto5aYotA6uQjNAQ4C8P9CN5Xklc_4qjItWmxHO2SWFxxXvjHVtoGk48JIqRUVqF3WxRWQdI3bo9iG2s29Li-gG-IFroLa2sIJSyfgnxpW68yKSJyfuSAmrYSUT8ISiRi5S-EbDnsYoFFy86m3Wo5Wv-kSDEIanafdKRCj-rNu14Bq_YymhsGbNqMqzpiAcY26Bwk2z6Gsa9zu6KxARBkZKdkOY95plrqmByBAvS3I7ZhJNrQ"/><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-primary truncate tracking-tight">AgriLink</span><span class="inline-flex items-center gap-1 px-1.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm"><span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>Online</span></div><div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm truncate"><span class="material-symbols-outlined text-[14px] text-secondary">location_on</span><span class="truncate font-label-sm text-label-sm">Kampala &amp; Central Hub</span></div></div></div><div class="flex items-center gap-space-xs flex-shrink-0"><button aria-label="Notifications" class="relative w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[24px]">notifications</span><span class="absolute top-2 right-2 w-2.5 h-2.5 rounded-full bg-secondary ring-2 ring-surface"></span></button><div class="flex items-center pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover shadow-[0_1px_4px_rgba(0,0,0,0.08)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjGpVqcRobJ6dgJqOb6OImerkE_Z6Na2ia4wnP9ggICH2fYk1OwCpcv9IkNZd0KV-ygAw-O1Usu0rjJjsL2vwGd_p52QqDsyeXT3sINDxCKDDc_B2OAatZdSy1eiKbIwZVMdmz_v7bx0lK2eeQp7kPRL7fFFGCjr4Q8bh7-TGajqdX5vo_J_1Fvh2QoCLYQsWfS5dxCKkDzBFpX9dRYKKngLbYoLNpqkNrQvhV5b7qwce4IJPeTLuoGw"/></div></div></div></header><main class="flex flex-col relative w-full pt-20 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full pb-8">
+<!-- Top Intelligence Sub-Header & Live Pulse -->
+<div class="px-margin pt-space-md pb-space-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="inline-flex w-2.5 h-2.5 rounded-full bg-secondary animate-ping"></span>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Live Spot Feed</span>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[15px] text-surface-tint">sync</span>
+<span>Synced 4m ago</span>
+</div>
+</div>
+<div class="flex flex-col">
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-primary tracking-tight">Market Intelligence &amp; Trends</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Kampala Wholesale &amp; Regional Aggregation Depots</p>
+</div>
+</div>
+<!-- Commodity Horizontal Filter Bar -->
+<div class="w-full overflow-x-auto py-space-xs px-margin no-scrollbar flex items-center gap-space-xs">
+<button class="flex-shrink-0 px-3.5 py-2 rounded-full bg-primary-container text-on-primary font-label-md text-label-md shadow-sm flex items-center gap-1.5 transition-all">
+<span class="material-symbols-outlined text-[16px]">eco</span>
+<span>Matooke (Grade A)</span>
+</button>
+<button class="flex-shrink-0 px-3.5 py-2 rounded-full bg-surface-container-high text-on-surface-variant font-label-md text-label-md hover:bg-surface-variant transition-colors flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">grain</span>
+<span>Yellow Maize</span>
+</button>
+<button class="flex-shrink-0 px-3.5 py-2 rounded-full bg-surface-container-high text-on-surface-variant font-label-md text-label-md hover:bg-surface-variant transition-colors flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">nutrition</span>
+<span>Red Roma Tomatoes</span>
+</button>
+<button class="flex-shrink-0 px-3.5 py-2 rounded-full bg-surface-container-high text-on-surface-variant font-label-md text-label-md hover:bg-surface-variant transition-colors flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">local_cafe</span>
+<span>Arabica Coffee</span>
+</button>
+<button class="flex-shrink-0 px-3.5 py-2 rounded-full bg-surface-container-high text-on-surface-variant font-label-md text-label-md hover:bg-surface-variant transition-colors flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">spa</span>
+<span>Dry Soya Beans</span>
+</button>
+</div>
+<!-- Active Commodity Spotlight & Trend Visualization -->
+<div class="px-margin mt-space-md">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-md">
+<!-- Card Title & Metadata -->
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm">Export Quality</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">UGX Standard Spot</span>
+</div>
+<h2 class="font-title-lg text-title-lg text-on-surface mt-1">Matooke (Cooking Bananas - Grade A)</h2>
+</div>
+<div class="w-10 h-10 rounded-full bg-primary-fixed/40 flex items-center justify-center flex-shrink-0 text-primary">
+<span class="material-symbols-outlined text-[22px]">bar_chart</span>
+</div>
+</div>
+<!-- Current Benchmark & Dynamic Yield Badge -->
+<div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-space-xs">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block">National Benchmark</span>
+<div class="flex items-baseline gap-1.5">
+<span class="font-headline-lg text-headline-lg text-primary tracking-tight font-bold">UGX 1,820</span>
+<span class="font-body-md text-body-md text-on-surface-variant font-medium">/ kg</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-md text-label-md shadow-xs">
+<span class="material-symbols-outlined text-[15px] font-bold">trending_up</span>
+<span>+6.8% (7D)</span>
+</span>
+<span class="font-label-sm text-label-sm text-surface-tint font-semibold">+UGX 115 vs last wk</span>
+</div>
+</div>
+<!-- Key Stat Mini Pills -->
+<div class="grid grid-cols-3 gap-2 p-2.5 rounded-lg bg-surface-container-low text-center">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">7D High</span>
+<span class="font-label-md text-label-md text-primary font-bold mt-0.5">1,880</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">7D Low</span>
+<span class="font-label-md text-label-md text-primary font-bold mt-0.5">1,690</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Trade Vol.</span>
+<span class="font-label-md text-label-md text-secondary font-bold mt-0.5">142 MT/d</span>
+</div>
+</div>
+<!-- SVG Sparkline Area Chart with Tooltip Milestone -->
+<div class="relative w-full pt-4">
+<!-- Interactive Value Milestone Pin (Today) -->
+<div class="absolute right-4 top-0 -translate-y-1 z-10 flex flex-col items-center">
+<span class="bg-primary text-on-primary font-label-sm text-label-sm font-bold px-2 py-0.5 rounded shadow-md">
+            UGX 1,820
+          </span>
+<span class="w-1.5 h-1.5 bg-primary rotate-45 -mt-1"></span>
+</div>
+<div class="w-full h-32 relative">
+<svg class="w-full h-full overflow-visible" preserveaspectratio="none" viewbox="0 0 320 120">
+<defs>
+<lineargradient id="matookeGradient" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#1B4332" stop-opacity="0.32"></stop>
+<stop offset="90%" stop-color="#1B4332" stop-opacity="0.0"></stop>
+</lineargradient>
+</defs>
+<!-- Horizontal grid guide lines -->
+<line stroke="#E2E6DF" stroke-dasharray="3 3" stroke-width="1" x1="0" x2="320" y1="20"></line>
+<line stroke="#E2E6DF" stroke-dasharray="3 3" stroke-width="1" x1="0" x2="320" y1="60"></line>
+<line stroke="#E2E6DF" stroke-dasharray="3 3" stroke-width="1" x1="0" x2="320" y1="100"></line>
+<!-- Filled Area Curve -->
+<path d="M 0,95 L 45,85 L 95,90 L 145,65 L 195,50 L 250,58 L 305,22 L 305,120 L 0,120 Z" fill="url(#matookeGradient)"></path>
+<!-- Stroke Path -->
+<path d="M 0,95 L 45,85 L 95,90 L 145,65 L 195,50 L 250,58 L 305,22" fill="none" stroke="#1B4332" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+<!-- Plot Dots -->
+<circle cx="45" cy="85" fill="#1B4332" r="3"></circle>
+<circle cx="95" cy="90" fill="#1B4332" r="3"></circle>
+<circle cx="145" cy="65" fill="#1B4332" r="3"></circle>
+<circle cx="195" cy="50" fill="#1B4332" r="3"></circle>
+<circle cx="250" cy="58" fill="#1B4332" r="3"></circle>
+<!-- Current Spot Highlight Dot -->
+<circle cx="305" cy="22" fill="#FFFFFF" r="5" stroke="#1B4332" stroke-width="2.5"></circle>
+</svg>
+</div>
+<!-- 7-Day X-Axis Timeline Labels -->
+<div class="flex justify-between items-center text-on-surface-variant font-label-sm text-label-sm pt-2">
+<span>Mon</span>
+<span>Tue</span>
+<span>Wed</span>
+<span>Thu</span>
+<span>Fri</span>
+<span>Sat</span>
+<span class="text-primary font-bold">Today</span>
+</div>
+</div>
+<!-- Timeframe Filter Toggle Chips -->
+<div class="flex items-center justify-between gap-1 pt-1">
+<button class="flex-1 py-1.5 text-center rounded bg-primary text-on-primary font-label-sm text-label-sm font-semibold transition-all">7D</button>
+<button class="flex-1 py-1.5 text-center rounded bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm hover:bg-surface-container transition-all">14D</button>
+<button class="flex-1 py-1.5 text-center rounded bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm hover:bg-surface-container transition-all">1M</button>
+<button class="flex-1 py-1.5 text-center rounded bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm hover:bg-surface-container transition-all">3M</button>
+<button class="flex-1 py-1.5 text-center rounded bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm hover:bg-surface-container transition-all">Season</button>
+</div>
+</div>
+</div>
+<!-- Market Intelligence & Agronomy Driver Insight -->
+<div class="px-margin mt-space-md">
+<div class="bg-secondary-fixed/30 rounded-xl p-space-md shadow-sm relative overflow-hidden">
+<div class="flex items-start gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-secondary text-on-secondary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">lightbulb</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">Trading Advisory</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Agronomist Desk</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface mt-1 leading-snug">
+            Masaka &amp; Mbarara supply tightening due to recent weekend retail bulk demand in Kampala (Kalerwe &amp; Nakasero markets).
+          </p>
+<div class="mt-2.5 p-2 rounded-lg bg-surface-container-lowest/80 flex items-center gap-1.5 text-primary">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+<span class="font-label-sm text-label-sm font-semibold">Recommended: Lock harvest lot pricing today before mid-week influx.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Regional Depots Buy vs Sell Rates Comparison -->
+<div class="px-margin mt-space-lg flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div>
+<h2 class="font-title-lg text-title-lg text-primary">Regional Depots &amp; Hubs</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Farmgate buy vs Depot gate buyer rates</p>
+</div>
+<button class="px-2.5 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm flex items-center gap-1">
+<span>Margin</span>
+<span class="material-symbols-outlined text-[16px]">swap_vert</span>
+</button>
+</div>
+<!-- Depot 1: Masaka Central Hub -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-3">
+<div class="flex items-start justify-between">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-primary">warehouse</span>
+<h3 class="font-title-md text-title-md text-on-surface truncate">Masaka Central Hub</h3>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Depot Gate #2 • Buddu Corridor</span>
+</div>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+          High Liquidity
+        </span>
+</div>
+<!-- Produce Visual Thumbnail with verified weights badge -->
+<div class="relative w-full h-24 rounded-lg overflow-hidden bg-surface-container">
+<img alt="Depot storage bags" class="w-full h-full object-cover" data-alt="A clean agricultural warehouse in Uganda filled with neatly stacked green plantain Matooke bunches on wooden pallets, bright morning sun streaming through depot windows, clear and organized trading atmosphere, soft earth and deep green tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuBqMF8ZNG8Fd6sDfWPc3Tws0hYTmWoIMSUJ10p3qx5TVBKxYSWS_TnlQuE8k6Mn6Un6NcXybxeEGz_Z2dVzwB8xviRqyKfZ1ulTkErDnLyOMfwg_8t6pxbu3hDNJ5HrSnswLF7UnWjW4tHTE7HpQfJqbBBvABJrmLzKiEagH_7MwrLNLeZ2R5tlyNryPZrb8LUZmKjT8s9BKYmIF-LlXJnbAhNEJgWxXGWGYW9jofgZVF7RUn5XsutQ"/>
+<div class="absolute bottom-2 left-2 px-2 py-0.5 rounded bg-surface/90 backdrop-blur-xs font-label-sm text-label-sm text-primary font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-secondary">verified_user</span>
+          UNBS Certified Scales
+        </div>
+</div>
+<!-- Rate Spreads -->
+<div class="grid grid-cols-2 gap-2 bg-surface-container-low p-2.5 rounded-lg">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Farmgate Buy</span>
+<span class="font-title-md text-title-md text-primary font-bold">UGX 1,750<span class="font-body-sm text-body-sm font-normal text-on-surface-variant">/kg</span></span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Depot Gate Sell</span>
+<span class="font-title-md text-title-md text-secondary font-bold">UGX 1,850<span class="font-body-sm text-body-sm font-normal text-on-surface-variant">/kg</span></span>
+</div>
+</div>
+<!-- Metrics and Trigger -->
+<div class="flex items-center justify-between pt-1">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-primary font-semibold">Spread: UGX 100/kg (5.7%)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">45 MT daily • 82% capacity</span>
+</div>
+<button class="h-10 px-4 rounded-xl bg-primary-container text-on-primary font-label-md text-label-md shadow-xs active:bg-primary transition-all flex items-center gap-1">
+<span>Lock Intake</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Depot 2: Kampala Central Silos & Kalerwe Depot -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-3">
+<div class="flex items-start justify-between">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-primary">storefront</span>
+<h3 class="font-title-md text-title-md text-on-surface truncate">Kampala Central &amp; Kalerwe</h3>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Northern Bypass Terminal Gate</span>
+</div>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[13px]">bolt</span>
+          Peak Demand
+        </span>
+</div>
+<!-- Produce Visual Thumbnail with verified weights badge -->
+<div class="relative w-full h-24 rounded-lg overflow-hidden bg-surface-container">
+<img alt="Commercial marketplace depot" class="w-full h-full object-cover" data-alt="Active wholesale market depot at Kalerwe Kampala, large trucks delivering freshly harvested green Matooke bananas, buyers in reflective vests inspecting produce quality with digital scales under a covered steel canopy, vivid and commercial setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKdY9hTFdyW-lXhVKpPs83RjDngz8vqEisvyGtbQKqnb4q_X_Y-W6twUXHYMRqndCo9T6JzSNPqweri9Nk76yqDkki-Bwe0VLpwlYg9JfwP7ALps7sac-g63K-96aW3e4_dIWTVbnmxP2-2LcR93OlHdYMYaGrZosIJHGDIUQgki3rI-g8oCYRY0sMY5ua6xMsslyJhx1SreLC8ydUJAZbvtsmXLvw4awY4I3V9xu_4DBb2_6Z8Ge_3A"/>
+<div class="absolute bottom-2 left-2 px-2 py-0.5 rounded bg-surface/90 backdrop-blur-xs font-label-sm text-label-sm text-primary font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-primary">local_shipping</span>
+          Escrow Guaranteed Intake
+        </div>
+</div>
+<!-- Rate Spreads -->
+<div class="grid grid-cols-2 gap-2 bg-surface-container-low p-2.5 rounded-lg">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Farmgate Buy</span>
+<span class="font-title-md text-title-md text-primary font-bold">UGX 1,820<span class="font-body-sm text-body-sm font-normal text-on-surface-variant">/kg</span></span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Depot Gate Sell</span>
+<span class="font-title-md text-title-md text-secondary font-bold">UGX 1,940<span class="font-body-sm text-body-sm font-normal text-on-surface-variant">/kg</span></span>
+</div>
+</div>
+<!-- Metrics and Trigger -->
+<div class="flex items-center justify-between pt-1">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-primary font-semibold">Spread: UGX 120/kg (6.5%)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">110 MT daily throughput</span>
+</div>
+<button class="h-10 px-4 rounded-xl bg-secondary text-on-secondary font-label-md text-label-md shadow-xs active:bg-on-secondary-fixed transition-all flex items-center gap-1">
+<span>Route Shipment</span>
+<span class="material-symbols-outlined text-[16px]">local_shipping</span>
+</button>
+</div>
+</div>
+<!-- Depot 3: Mbarara Agro-Terminal -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-3">
+<div class="flex items-start justify-between">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-primary">hub</span>
+<h3 class="font-title-md text-title-md text-on-surface truncate">Mbarara Agro-Terminal</h3>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Nyamitanga Aggregation Yard</span>
+</div>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+          Steady Trading
+        </span>
+</div>
+<!-- Rate Spreads -->
+<div class="grid grid-cols-2 gap-2 bg-surface-container-low p-2.5 rounded-lg">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Farmgate Buy</span>
+<span class="font-title-md text-title-md text-primary font-bold">UGX 1,680<span class="font-body-sm text-body-sm font-normal text-on-surface-variant">/kg</span></span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Depot Gate Sell</span>
+<span class="font-title-md text-title-md text-secondary font-bold">UGX 1,760<span class="font-body-sm text-body-sm font-normal text-on-surface-variant">/kg</span></span>
+</div>
+</div>
+<!-- Metrics and Trigger -->
+<div class="flex items-center justify-between pt-1">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-primary font-semibold">Spread: UGX 80/kg (4.7%)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">30 MT daily capacity</span>
+</div>
+<button class="h-10 px-4 rounded-xl bg-surface-container-high text-primary font-label-md text-label-md active:bg-surface-variant transition-all">
+          View Lots
+        </button>
+</div>
+</div>
+<!-- Depot 4: Mbale Regional Aggregation Depot -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-3">
+<div class="flex items-start justify-between">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-primary">domain</span>
+<h3 class="font-title-md text-title-md text-on-surface truncate">Mbale Regional Depot</h3>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Mount Elgon Hub</span>
+</div>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm">
+          Backhaul Ready
+        </span>
+</div>
+<!-- Rate Spreads -->
+<div class="grid grid-cols-2 gap-2 bg-surface-container-low p-2.5 rounded-lg">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Farmgate Buy</span>
+<span class="font-title-md text-title-md text-primary font-bold">UGX 1,650<span class="font-body-sm text-body-sm font-normal text-on-surface-variant">/kg</span></span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Depot Gate Sell</span>
+<span class="font-title-md text-title-md text-secondary font-bold">UGX 1,740<span class="font-body-sm text-body-sm font-normal text-on-surface-variant">/kg</span></span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-primary font-semibold">Spread: UGX 90/kg (5.4%)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Transit pool departing 4:00 PM</span>
+</div>
+<button class="h-10 px-4 rounded-xl bg-surface-container-high text-primary font-label-md text-label-md active:bg-surface-variant transition-all">
+          View Lots
+        </button>
+</div>
+</div>
+</div>
+<!-- Zero-Data SMS & Price Alert Action Card -->
+<div class="px-margin mt-space-lg">
+<div class="bg-primary text-on-primary rounded-xl p-space-md shadow-md flex flex-col gap-3 relative overflow-hidden">
+<!-- Decorative background accent icon -->
+<span class="material-symbols-outlined absolute -right-4 -bottom-4 text-[96px] text-primary-container/40 pointer-events-none">add_alert</span>
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-secondary text-on-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">sms</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-primary">Zero-Data SMS Price Alerts</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-primary-container leading-relaxed">
+        Receive real-time instant alerts when Matooke exceeds <strong class="text-on-primary">UGX 1,900/kg</strong> or dips under <strong class="text-on-primary">UGX 1,700/kg</strong> on your registered MTN or Airtel lines.
+      </p>
+<button class="h-12 w-full mt-1 rounded-xl bg-secondary-container text-on-secondary-container font-label-lg text-label-lg font-bold flex items-center justify-center gap-2 shadow-sm active:scale-[0.98] transition-all" id="alertBtn">
+<span class="material-symbols-outlined text-[20px]">notification_add</span>
+<span>Set Custom Price Alert</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+  // Simple micro-interaction for commodity pill switching and alert triggers
+  document.querySelectorAll('button').forEach(btn => {
+    btn.addEventListener('click', function(e) {
+      if (this.innerText.includes('Lock') || this.innerText.includes('Route')) {
+        const originalText = this.innerHTML;
+        this.innerHTML = '<span class="material-symbols-outlined text-[16px] animate-spin">refresh</span> Reserving...';
+        setTimeout(() => {
+          this.innerHTML = '<span class="material-symbols-outlined text-[16px]">done</span> Reserved';
+          setTimeout(() => { this.innerHTML = originalText; }, 2200);
+        }, 800);
+      }
+    });
+  });
+
+  const alertBtn = document.getElementById('alertBtn');
+  if (alertBtn) {
+    alertBtn.addEventListener('click', function() {
+      const orig = this.innerHTML;
+      this.innerHTML = '<span class="material-symbols-outlined text-[20px]">check_circle</span> Alert Configured for +256 77...';
+      setTimeout(() => { this.innerHTML = orig; }, 3000);
+    });
+  }
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.04)]" data-active-classes="text-primary font-bold"><div class="flex items-center justify-around h-16 px-space-xs"><a class="flex flex-col items-center justify-center flex-1 h-full min-w-[44px] py-1 text-on-surface-variant transition-colors" data-path="marketplace" href="Marketplace.html"><span class="material-symbols-outlined text-[22px]">storefront</span><span class="font-label-sm text-label-sm mt-0.5 truncate">Marketplace</span></a><a class="flex flex-col items-center justify-center flex-1 h-full min-w-[44px] py-1 text-on-surface-variant transition-colors" data-path="my-harvests-and-pools" href="Harvest.html"><span class="material-symbols-outlined text-[22px]">nest_eco_leaf</span><span class="font-label-sm text-label-sm mt-0.5 truncate">Harvests</span></a><a class="flex flex-col items-center justify-center flex-1 h-full min-w-[44px] py-1 text-on-surface-variant transition-colors" data-path="orders-and-escrow" href="Escrow.html"><span class="material-symbols-outlined text-[22px]">verified_user</span><span class="font-label-sm text-label-sm mt-0.5 truncate">Escrow</span></a><a class="flex flex-col items-center justify-center flex-1 h-full min-w-[44px] py-1 text-on-surface-variant transition-colors" data-path="transits-and-hubs" href="Transit.html"><span class="material-symbols-outlined text-[22px]">local_shipping</span><span class="font-label-sm text-label-sm mt-0.5 truncate">Transits</span></a></div></nav></body></html>

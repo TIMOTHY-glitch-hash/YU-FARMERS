@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600;700&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-primary-fixed": "#002114", "on-tertiary-fixed": "#002114", "surface-tint": "#3f6653", "error": "#ba1a1a", "tertiary-container": "#00452e", "inverse-surface": "#2e312f", "outline": "#717973", "on-surface-variant": "#414844", "secondary-fixed": "#ffdcc3", "surface-variant": "#e2e3e0", "secondary-fixed-dim": "#ffb77d", "on-tertiary-fixed-variant": "#0e5138", "on-primary-fixed-variant": "#274e3d", "primary": "#012d1d", "on-secondary": "#ffffff", "surface-dim": "#d9dad7", "on-tertiary-container": "#75b393", "surface-bright": "#f9faf7", "surface": "#f9faf7", "primary-fixed-dim": "#a5d0b9", "on-tertiary": "#ffffff", "on-secondary-container": "#663500", "error-container": "#ffdad6", "primary-fixed": "#c1ecd4", "inverse-primary": "#a5d0b9", "tertiary-fixed": "#b1f0ce", "on-surface": "#191c1b", "on-secondary-fixed": "#2f1500", "surface-container-highest": "#e2e3e0", "on-primary": "#ffffff", "background": "#f9faf7", "secondary-container": "#fe932c", "on-primary-container": "#86af99", "inverse-on-surface": "#f0f1ee", "surface-container-high": "#e7e8e6", "on-secondary-fixed-variant": "#6e3900", "secondary": "#904d00", "primary-container": "#1b4332", "on-error": "#ffffff", "tertiary-fixed-dim": "#95d4b3", "outline-variant": "#c1c8c2", "surface-container-low": "#f3f4f1", "on-background": "#191c1b", "surface-container": "#edeeeb", "tertiary": "#002d1c", "surface-container-lowest": "#ffffff", "on-error-container": "#93000a" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "margin-desktop": "2.5rem", "space-sm": "0.5rem", "margin-tablet": "1.5rem", "margin": "1rem", "space-xs": "0.25rem", "gutter-desktop": "1.5rem", "space-xl": "2.5rem", "gutter": "1rem", "space-lg": "1.5rem", "space-md": "1rem" }, "fontFamily": { "label-md": ["Public Sans"], "label-sm": ["Public Sans"], "body-md": ["Public Sans"], "headline-lg": ["Space Grotesk"], "headline-md": ["Space Grotesk"], "label-lg": ["Public Sans"], "body-sm": ["Public Sans"], "display-lg": ["Space Grotesk"], "headline-lg-mobile": ["Space Grotesk"], "headline-sm": ["Space Grotesk"], "title-lg": ["Public Sans"], "title-md": ["Public Sans"], "body-lg": ["Public Sans"] }, "fontSize": { "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.03em", "fontWeight": "600"}], "label-sm": ["11px", {"lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700"}], "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}], "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.015em", "fontWeight": "600"}], "headline-md": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600"}], "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600"}], "body-sm": ["12px", {"lineHeight": "18px", "fontWeight": "400"}], "display-lg": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}], "headline-lg-mobile": ["26px", {"lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "600"}], "headline-sm": ["20px", {"lineHeight": "28px", "fontWeight": "600"}], "title-lg": ["18px", {"lineHeight": "26px", "fontWeight": "600"}], "title-md": ["16px", {"lineHeight": "24px", "fontWeight": "600"}], "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-background font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-20 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="You-Farm Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdryaOneto5aYotA6uQjNAQ4C8P9CN5Xklc_4qjItWmxHO2SWFxxXvjHVtoGk48JIqRUVqF3WxRWQdI3bo9iG2s29Li-gG-IFroLa2sIJSyfgnxpW68yKSJyfuSAmrYSUT8ISiRi5S-EbDnsYoFFy86m3Wo5Wv-kSDEIanafdKRCj-rNu14Bq_YymhsGbNqMqzpiAcY26Bwk2z6Gsa9zu6KxARBkZKdkOY95plrqmByBAvS3I7ZhJNrQ"/><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-primary truncate tracking-tight">You-Farm</span><span class="inline-flex items-center gap-1 px-1.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm"><span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>Online</span></div><div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm truncate"><span class="material-symbols-outlined text-[14px] text-secondary">location_on</span><span class="truncate font-label-sm text-label-sm">Kampala &amp; Central Hub</span></div></div></div><div class="flex items-center gap-space-xs flex-shrink-0"><button aria-label="Notifications" class="relative w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[24px]">notifications</span><span class="absolute top-2 right-2 w-2.5 h-2.5 rounded-full bg-secondary ring-2 ring-surface"></span></button><div class="flex items-center pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover shadow-[0_1px_4px_rgba(0,0,0,0.08)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjGpVqcRobJ6dgJqOb6OImerkE_Z6Na2ia4wnP9ggICH2fYk1OwCpcv9IkNZd0KV-ygAw-O1Usu0rjJjsL2vwGd_p52QqDsyeXT3sINDxCKDDc_B2OAatZdSy1eiKbIwZVMdmz_v7bx0lK2eeQp7kPRL7fFFGCjr4Q8bh7-TGajqdX5vo_J_1Fvh2QoCLYQsWfS5dxCKkDzBFpX9dRYKKngLbYoLNpqkNrQvhV5b7qwce4IJPeTLuoGw"/></div></div></div></header><main class="flex flex-col relative w-full pt-20 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<div class="px-margin pt-space-md pb-space-lg flex flex-col gap-space-lg">
+<!-- Header Contextual Welcome & Switcher -->
+<div class="flex items-center justify-between gap-space-sm">
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">Cooperative Hub • Mbale</span>
+<h2 class="font-headline-md text-headline-md text-primary tracking-tight">Harvests &amp; Collective Pools</h2>
+</div>
+<div class="flex items-center gap-1.5 px-space-sm py-1.5 rounded-full bg-primary-fixed text-on-primary-fixed shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-primary" style="font-variation-settings: 'FILL' 1;">groups</span>
+<span class="font-label-sm text-label-sm font-bold">Leader View</span>
+</div>
+</div>
+<!-- Farmer Summary Card with MoMo Instant Cashout -->
+<div class="relative overflow-hidden rounded-xl bg-primary text-on-primary p-space-md shadow-md">
+<div class="absolute -right-10 -bottom-10 w-44 h-44 rounded-full bg-surface-tint/20 blur-2xl pointer-events-none"></div>
+<div class="flex items-start justify-between relative z-10 mb-space-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-primary-fixed-dim uppercase tracking-wider font-semibold">Protected Escrow Holdings</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-headline-lg-mobile text-headline-lg-mobile font-bold text-surface-bright tracking-tight">UGX 4,850,000</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-primary-container flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[14px] text-primary-fixed" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+            Locked in Safe Escrow until depot delivery
+          </span>
+</div>
+<div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center flex-shrink-0 text-primary-fixed shadow-inner">
+<span class="material-symbols-outlined text-[20px]">account_balance_wallet</span>
+</div>
+</div>
+<!-- Quick Metrics Grid -->
+<div class="grid grid-cols-2 gap-space-sm relative z-10 mb-space-md">
+<div class="bg-primary-container/80 rounded-lg p-space-sm flex flex-col">
+<span class="font-label-sm text-label-sm text-primary-fixed-dim">Active Listed Lots</span>
+<div class="flex items-center gap-1.5 mt-1">
+<span class="font-headline-sm text-headline-sm text-surface-bright font-bold">3</span>
+<span class="font-label-sm text-label-sm text-on-primary-container">Lots on offer</span>
+</div>
+</div>
+<div class="bg-primary-container/80 rounded-lg p-space-sm flex flex-col">
+<span class="font-label-sm text-label-sm text-primary-fixed-dim">Aggregated Pool Yield</span>
+<div class="flex items-center gap-1.5 mt-1">
+<span class="font-headline-sm text-headline-sm text-surface-bright font-bold">3.2</span>
+<span class="font-label-sm text-label-sm text-on-primary-container">MT committed</span>
+</div>
+</div>
+</div>
+<!-- Cash Out Action Drawer -->
+<div class="relative z-10 pt-space-xs">
+<button class="w-full h-12 px-space-md rounded-lg bg-secondary text-on-secondary font-label-lg text-label-lg font-bold flex items-center justify-between shadow-sm active:scale-[0.99] transition-transform" id="payout-trigger-btn">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">payments</span>
+<span>Cash Out to MTN / Airtel Money</span>
+</div>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Quick Voice & Visual Registration Bar -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-primary font-bold">Sell Direct to Big Buyers</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Bypass brokers. Instant inspection &amp; fair floor pricing.</span>
+</div>
+<div class="w-8 h-8 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-sm pt-space-xs">
+<button class="h-14 rounded-lg bg-surface-container-low hover:bg-surface-container flex items-center justify-center gap-2 px-space-sm text-left transition-colors" id="btn-quick-voice">
+<div class="w-9 h-9 rounded-full bg-primary-fixed text-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">mic</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-primary font-bold truncate">Voice Listing</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[11px] truncate">Record in Luganda</span>
+</div>
+</button>
+<button class="h-14 rounded-lg bg-surface-container-low hover:bg-surface-container flex items-center justify-center gap-2 px-space-sm text-left transition-colors" id="btn-quick-snap">
+<div class="w-9 h-9 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">photo_camera</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-primary font-bold truncate">Crop Scan</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[11px] truncate">Moisture &amp; Grade AI</span>
+</div>
+</button>
+</div>
+<button class="w-full h-12 rounded-lg bg-primary-container text-on-primary font-label-lg text-label-lg font-bold flex items-center justify-center gap-2 shadow-sm active:scale-[0.99] transition-transform mt-space-xs" id="btn-new-lot-full">
+<span class="material-symbols-outlined text-[20px]">add_circle</span>
+<span>+ List New Harvest Lot</span>
+</button>
+</div>
+<!-- SECTION: Open Aggregation Pools -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[20px] text-primary" style="font-variation-settings: 'FILL' 1;">handshake</span>
+<h3 class="font-title-lg text-title-lg text-primary tracking-tight">Open Aggregation Pools</h3>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-bold">2 High Demand</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Pool crops with neighbors to satisfy wholesale procurement lots with verified payments.
+      </p>
+<!-- Pool Contract 1: Uganda Breweries -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Institutional Contract
+              </span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">timer</span> 4 days left
+              </span>
+</div>
+<h4 class="font-title-md text-title-md text-primary mt-1 leading-snug">Uganda Breweries 50-Ton Sorghum/Barley Contract</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[14px] text-outline">domain</span> Central Malting Facility • Luzira Pickup
+            </span>
+</div>
+<div class="w-12 h-12 rounded-lg bg-surface-container-low flex items-center justify-center flex-shrink-0">
+<img class="w-full h-full object-cover rounded-lg" data-alt="High resolution macro photograph of golden dried grain barley and red sorghum kernels in a rustic woven Ugandan palm-frond basket under soft bright natural morning sunlight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgMSgNojOfVKJ_hlZJwoZn8LUS5821JuPgd-f969lq0SqxIUnzKSydmkZm3Mvr-9yjBZ6BxOi0FZoYLmFpgZ1IPv0M82Z-Kp_YxybrsBv2h9Rx2eDE0EVKY_UbkgZJxwn_jwuSgONNg4WSvOFPLB9xQyXLUbxHQJ4ocC9_BPLxPswBF2J2zb-Vf32b-Ac2xCdY9BlUURcfAOpKdn2DvZ8jQMqTyrCJ2sfR0i7Hna9t6-Izf6e5pIh76w"/>
+</div>
+</div>
+<!-- Progress Metric -->
+<div class="bg-surface-container-low rounded-lg p-space-sm flex flex-col gap-1.5">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant font-medium">Pool Progress</span>
+<span class="text-primary font-bold">34 / 50 Tons (68%)</span>
+</div>
+<div class="w-full h-2.5 rounded-full bg-surface-variant overflow-hidden">
+<div class="h-full bg-primary rounded-full transition-all duration-500" style="width: 68%;"></div>
+</div>
+<div class="flex items-center justify-between text-[11px] font-body-sm text-on-surface-variant">
+<span>Remaining required: 16 Tons</span>
+<span class="text-secondary font-semibold">18 Farmers Contributing</span>
+</div>
+</div>
+<!-- Contract Commercial Terms -->
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Guaranteed Price</span>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">1,600</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">UGX / kg</span>
+</div>
+</div>
+<button class="contribute-btn h-11 px-space-md rounded-lg bg-primary text-on-primary font-label-md text-label-md font-bold flex items-center gap-1.5 shadow-sm active:scale-95 transition-transform" data-pool="sorghum">
+<span class="material-symbols-outlined text-[18px]">add_task</span>
+<span>Contribute Yield</span>
+</button>
+</div>
+</div>
+<!-- Pool Contract 2: Kampala Schools Alliance -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px] text-tertiary" style="font-variation-settings: 'FILL' 1;">school</span> Education Board
+              </span>
+<span class="px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">alarm</span> Closes in 2 days
+              </span>
+</div>
+<h4 class="font-title-md text-title-md text-primary mt-1 leading-snug">Kampala Schools Alliance 20-Ton Dry Beans Pool</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[14px] text-outline">warehouse</span> Jinja Road Agro-Terminal Aggregation Hub
+            </span>
+</div>
+<div class="w-12 h-12 rounded-lg bg-surface-container-low flex items-center justify-center flex-shrink-0">
+<img class="w-full h-full object-cover rounded-lg" data-alt="Top down overhead photo of polished clean speckled red Nambale dry beans stacked in a burlap sack under bright warm tropical sunlight with a shallow depth of field." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNJ0FznvUmymQ1ykuPAFgfpxRKn27CUga8Hmrv_J-mYQFHk2AVICDQAczn-TPwi4GzpQtAcYlfh10sAttvXJ_bqBv8_FoT5NDKWEPqFGKhBhS4eD6BKGI_iW2a-fiCZZveZoNe80Cv--4dS4EW5Zx37Fe3pKfHKrMwqaqLD1LvbCNf6b-mYiHWoGkwc388gmknhqIpYnuWxq9OyQ57i3c09Jo-XpH5udHJzIIFQ3gqh2dhx3jHTaGVMg"/>
+</div>
+</div>
+<!-- Progress Metric -->
+<div class="bg-surface-container-low rounded-lg p-space-sm flex flex-col gap-1.5">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant font-medium">Pool Progress</span>
+<span class="text-secondary font-bold">17 / 20 Tons (85%)</span>
+</div>
+<div class="w-full h-2.5 rounded-full bg-surface-variant overflow-hidden">
+<div class="h-full bg-secondary-container rounded-full transition-all duration-500" style="width: 85%;"></div>
+</div>
+<div class="flex items-center justify-between text-[11px] font-body-sm text-on-surface-variant">
+<span>Only 3 Tons needed to finalize</span>
+<span class="text-primary font-semibold">Ready for truck routing</span>
+</div>
+</div>
+<!-- Contract Commercial Terms -->
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Guaranteed Price</span>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">3,200</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">UGX / kg</span>
+</div>
+</div>
+<button class="contribute-btn h-11 px-space-md rounded-lg bg-secondary text-on-secondary font-label-md text-label-md font-bold flex items-center gap-1.5 shadow-sm active:scale-95 transition-transform" data-pool="beans">
+<span class="material-symbols-outlined text-[18px]">group_add</span>
+<span>Join Pool</span>
+</button>
+</div>
+</div>
+</div>
+<!-- SECTION: My Listed Harvest Lots -->
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[20px] text-primary" style="font-variation-settings: 'FILL' 1;">inventory_2</span>
+<h3 class="font-title-lg text-title-lg text-primary tracking-tight">My Listed Harvest Lots</h3>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">2 of 3 Active</span>
+</div>
+<!-- Lot Item 1: Arabica Coffee -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">Lot #AG-409</span>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                Quality Verified
+              </span>
+</div>
+<h4 class="font-title-md text-title-md text-on-surface font-semibold mt-0.5">500 kg Grade A Arabica Coffee</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Mount Elgon Slopes • 11.8% Moisture Content</span>
+</div>
+<div class="w-12 h-12 rounded-lg bg-surface-container-low flex items-center justify-center flex-shrink-0">
+<img class="w-full h-full object-cover rounded-lg" data-alt="High quality vibrant close up of freshly processed Grade A dried green Arabica coffee beans held in hands with an organic background of a Ugandan coffee plantation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFrlR-N1rC9PO2mmvHJjtaT2GR7KeC4nP6E02vQzHAewt017Jyfmwuzn9jjUEA-AWaeLm05PEgaOcxusPfmmWljVscgLFdcMx152bOfwiwyayr2Fe3AIDdGykGRQ8sU5zftTs3NX9e8FlapdhDWMHILr8_kbVCh7AQOvEZrmXGlIcqy06INARlMSvUGZW37aEJbdq0nMyBqySyOZMEr76O-avuoeCfttyk8HhlLBMTy-kGuXKesDo0Rw"/>
+</div>
+</div>
+<!-- Verification Detail Banner -->
+<div class="rounded-lg bg-surface-container-low p-space-sm flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[20px] text-primary flex-shrink-0" style="font-variation-settings: 'FILL' 1;">verified</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-primary font-bold truncate">Certified by District Extension Officer</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[11px] truncate">Extension Officer: P. Mukasa (ID: #EXT-284)</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Listing Unit Price</span>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">UGX 9,000</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">/ kg</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<div class="flex items-center gap-1 px-2.5 py-1.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[15px]">forum</span>
+<span>2 Inquiries</span>
+</div>
+<button aria-label="Lot Options" class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-primary hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Lot Item 2: Yellow Maize -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">Lot #AG-312</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-secondary">local_shipping</span>
+                In Transit
+              </span>
+</div>
+<h4 class="font-title-md text-title-md text-on-surface font-semibold mt-0.5">1,200 kg Yellow Maize</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Sun-dried • Grade 2 Processing Ready</span>
+</div>
+<div class="w-12 h-12 rounded-lg bg-surface-container-low flex items-center justify-center flex-shrink-0">
+<img class="w-full h-full object-cover rounded-lg" data-alt="Vibrant clean golden dried yellow maize corn kernels piled inside an industrial depot container in Uganda under bright natural daylight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmS8T40idW4E3Sfg4lQsMdxwqqPp2Amqy__Yxfv6nRg4ze2A6c4gS-yZ8gO0eFvAJt2T5W_nRV21yN1Vj9Lnc-ui9HOYsJIIU5mkUaxgzS0m3XJI7pjlrw5QpL1O1Qw4Ctk_ypNGQFLodEs-y_ilJjLVXDhBqv0ThY2pOlUA88V5mkg-6weMOZzBA9_pbTnED-YsQ15Mo718Hyj8rW0oefHUV7zUiT7Na3pFW1scQUp7Z-EsJ63FyLKg"/>
+</div>
+</div>
+<!-- Tracking Transit Strip -->
+<div class="rounded-lg bg-surface-container-low p-space-sm flex items-center justify-between gap-2">
+<div class="flex items-center gap-2 min-w-0">
+<div class="w-2 h-2 rounded-full bg-secondary animate-ping"></div>
+<span class="font-label-sm text-label-sm text-primary font-semibold truncate">En route to Jinja Silo Terminal</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[11px] flex-shrink-0">ETA: 4:30 PM Today</span>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Contract Value Total</span>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">UGX 1,440,000</span>
+</div>
+</div>
+<button class="h-10 px-3.5 rounded-lg bg-surface-container-high text-primary font-label-md text-label-md font-bold flex items-center gap-1 hover:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined text-[18px]">receipt_long</span>
+<span>View Waybill</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Cooperative Collective Power Micro-Explainer Banner -->
+<div class="rounded-xl bg-surface-container-low p-space-md flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-full bg-primary-fixed text-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">energy_savings_leaf</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-primary font-bold">Fair Farmgate Guarantee</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">By aggregating your yield with 42 fellow farmers in Mbale, you secure +18% higher margins compared to local road buyers.</span>
+</div>
+</div>
+</div>
+<!-- Interactive Modal / Slide-up Sheet: Contribute Yield to Pool (Hidden by default) -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/60 backdrop-blur-sm hidden items-end justify-center transition-opacity" id="pool-modal-overlay">
+<div class="w-full max-w-lg bg-surface rounded-t-xl p-space-md flex flex-col gap-space-md shadow-2xl animate-in slide-in-from-bottom duration-200">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[24px] text-primary">add_business</span>
+<h3 class="font-title-lg text-title-lg text-primary font-bold">Commit Yield to Contract</h3>
+</div>
+<button class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant" id="modal-close-btn">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col gap-0.5">
+<span class="font-label-sm text-label-sm text-secondary font-bold" id="modal-pool-title">Uganda Breweries 50-Ton Sorghum</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Guaranteed payout: <strong class="text-primary font-semibold">UGX 1,600 / kg</strong> via Mobile Money</span>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-primary font-bold" for="commit-amount-input">How many kilograms will you pledge?</label>
+<div class="relative flex items-center">
+<input class="w-full h-12 px-space-md rounded-lg bg-surface-container-lowest text-on-surface font-headline-sm text-headline-sm font-bold focus:outline-none focus:ring-2 focus:ring-primary shadow-sm pr-16" id="commit-amount-input" placeholder="e.g. 800" type="number" value="500"/>
+<span class="absolute right-4 font-label-md text-label-md text-on-surface-variant font-bold">KG</span>
+</div>
+<div class="flex items-center justify-between text-[12px] font-body-sm text-on-surface-variant px-1 mt-0.5">
+<span>Est. Escrow Value:</span>
+<span class="font-bold text-primary text-[14px]" id="modal-calc-payout">UGX 800,000</span>
+</div>
+</div>
+<div class="flex flex-col gap-2 pt-space-xs">
+<div class="flex items-start gap-2 bg-primary-fixed/40 p-space-sm rounded-lg">
+<span class="material-symbols-outlined text-[18px] text-primary mt-0.5">lock_clock</span>
+<span class="font-body-sm text-body-sm text-on-primary-fixed-variant text-[12px]">Funds are pre-locked in You-Farm Escrow by buyer. Released instantly upon quality check at Mbale depot.</span>
+</div>
+<button class="w-full h-12 rounded-lg bg-primary text-on-primary font-label-lg text-label-lg font-bold flex items-center justify-center gap-2 shadow-md active:scale-95 transition-transform" id="modal-confirm-btn">
+<span class="material-symbols-outlined text-[20px]">verified</span>
+<span>Confirm Pledge &amp; Generate Bag Tags</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Toast Notification Message -->
+<div class="fixed top-24 left-1/2 -translate-x-1/2 z-50 px-space-md py-space-sm rounded-full bg-inverse-surface text-inverse-on-surface font-label-md text-label-md flex items-center gap-2 shadow-xl opacity-0 pointer-events-none transition-all duration-300" id="toast-notification">
+<span class="material-symbols-outlined text-[18px] text-tertiary-fixed" id="toast-icon">check_circle</span>
+<span id="toast-text">Pledge registered successfully!</span>
+</div>
+<script>
+    (function initHarvestHub() {
+      const modal = document.getElementById('pool-modal-overlay');
+      const closeBtn = document.getElementById('modal-close-btn');
+      const confirmBtn = document.getElementById('modal-confirm-btn');
+      const contributeBtns = document.querySelectorAll('.contribute-btn');
+      const modalPoolTitle = document.getElementById('modal-pool-title');
+      const commitInput = document.getElementById('commit-amount-input');
+      const calcPayout = document.getElementById('modal-calc-payout');
+      const toast = document.getElementById('toast-notification');
+      const toastText = document.getElementById('toast-text');
+      const payoutBtn = document.getElementById('payout-trigger-btn');
+      const btnVoice = document.getElementById('btn-quick-voice');
+      const btnSnap = document.getElementById('btn-quick-snap');
+      const btnNewLot = document.getElementById('btn-new-lot-full');
+
+      let currentRate = 1600;
+
+      function showToast(msg, icon = 'check_circle') {
+        if (!toast) return;
+        toastText.textContent = msg;
+        document.getElementById('toast-icon').textContent = icon;
+        toast.classList.remove('opacity-0', 'pointer-events-none');
+        toast.classList.add('opacity-100');
+        setTimeout(() => {
+          toast.classList.add('opacity-0', 'pointer-events-none');
+          toast.classList.remove('opacity-100');
+        }, 3200);
+      }
+
+      function updateCalculation() {
+        const kg = parseFloat(commitInput.value) || 0;
+        const total = kg * currentRate;
+        calcPayout.textContent = 'UGX ' + total.toLocaleString();
+      }
+
+      contributeBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          const poolType = btn.getAttribute('data-pool');
+          if (poolType === 'beans') {
+            modalPoolTitle.textContent = 'Kampala Schools Alliance 20-Ton Dry Beans';
+            currentRate = 3200;
+          } else {
+            modalPoolTitle.textContent = 'Uganda Breweries 50-Ton Sorghum/Barley';
+            currentRate = 1600;
+          }
+          updateCalculation();
+          modal.classList.remove('hidden');
+          modal.classList.add('flex');
+        });
+      });
+
+      if (commitInput) {
+        commitInput.addEventListener('input', updateCalculation);
+      }
+
+      function closeModal() {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+      }
+
+      if (closeBtn) closeBtn.addEventListener('click', closeModal);
+      if (modal) {
+        modal.addEventListener('click', (e) => {
+          if (e.target === modal) closeModal();
+        });
+      }
+
+      if (confirmBtn) {
+        confirmBtn.addEventListener('click', () => {
+          const kg = commitInput.value || '500';
+          closeModal();
+          showToast(`Committed ${kg} kg! Printable QR Bag Tags sent via SMS.`);
+        });
+      }
+
+      if (payoutBtn) {
+        payoutBtn.addEventListener('click', () => {
+          showToast('Initiating UGX 4,850,000 transfer to registered MTN MoMo line...', 'send_to_mobile');
+        });
+      }
+
+      if (btnVoice) {
+        btnVoice.addEventListener('click', () => {
+          showToast('Microphone activated: Speak crop type, bags & location in Luganda/English', 'mic');
+        });
+      }
+
+      if (btnSnap) {
+        btnSnap.addEventListener('click', () => {
+          showToast('Camera active: Align 10 grains on dry sheet for AI moisture grade scan', 'photo_camera');
+        });
+      }
+
+      if (btnNewLot) {
+        btnNewLot.addEventListener('click', () => {
+          showToast('Opening Full Farm Lot Intake Specifier...', 'edit_document');
+        });
+      }
+    })();
+  </script>
+</div></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.04)]" data-active-classes="text-primary font-bold"><div class="flex items-center justify-around h-16 px-space-xs"><a class="flex flex-col items-center justify-center flex-1 h-full min-w-[44px] py-1 text-on-surface-variant transition-colors" data-path="marketplace" href="Marketplace.html"><span class="material-symbols-outlined text-[22px]">storefront</span><span class="font-label-sm text-label-sm mt-0.5 truncate">Marketplace</span></a><a class="flex flex-col items-center justify-center flex-1 h-full min-w-[44px] py-1 text-on-surface-variant transition-colors" data-path="my-harvests-and-pools" href="Harvest.html"><span class="material-symbols-outlined text-[22px]">nest_eco_leaf</span><span class="font-label-sm text-label-sm mt-0.5 truncate">Harvests</span></a><a class="flex flex-col items-center justify-center flex-1 h-full min-w-[44px] py-1 text-on-surface-variant transition-colors" data-path="orders-and-escrow" href="Escrow.html"><span class="material-symbols-outlined text-[22px]">verified_user</span><span class="font-label-sm text-label-sm mt-0.5 truncate">Escrow</span></a><a class="flex flex-col items-center justify-center flex-1 h-full min-w-[44px] py-1 text-on-surface-variant transition-colors" data-path="transits-and-hubs" href="Transit.html"><span class="material-symbols-outlined text-[22px]">local_shipping</span><span class="font-label-sm text-label-sm mt-0.5 truncate">Transits</span></a></div></nav></body></html>

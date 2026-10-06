@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600;700&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-primary-fixed": "#002114", "on-tertiary-fixed": "#002114", "surface-tint": "#3f6653", "error": "#ba1a1a", "tertiary-container": "#00452e", "inverse-surface": "#2e312f", "outline": "#717973", "on-surface-variant": "#414844", "secondary-fixed": "#ffdcc3", "surface-variant": "#e2e3e0", "secondary-fixed-dim": "#ffb77d", "on-tertiary-fixed-variant": "#0e5138", "on-primary-fixed-variant": "#274e3d", "primary": "#012d1d", "on-secondary": "#ffffff", "surface-dim": "#d9dad7", "on-tertiary-container": "#75b393", "surface-bright": "#f9faf7", "surface": "#f9faf7", "primary-fixed-dim": "#a5d0b9", "on-tertiary": "#ffffff", "on-secondary-container": "#663500", "error-container": "#ffdad6", "primary-fixed": "#c1ecd4", "inverse-primary": "#a5d0b9", "tertiary-fixed": "#b1f0ce", "on-surface": "#191c1b", "on-secondary-fixed": "#2f1500", "surface-container-highest": "#e2e3e0", "on-primary": "#ffffff", "background": "#f9faf7", "secondary-container": "#fe932c", "on-primary-container": "#86af99", "inverse-on-surface": "#f0f1ee", "surface-container-high": "#e7e8e6", "on-secondary-fixed-variant": "#6e3900", "secondary": "#904d00", "primary-container": "#1b4332", "on-error": "#ffffff", "tertiary-fixed-dim": "#95d4b3", "outline-variant": "#c1c8c2", "surface-container-low": "#f3f4f1", "on-background": "#191c1b", "surface-container": "#edeeeb", "tertiary": "#002d1c", "surface-container-lowest": "#ffffff", "on-error-container": "#93000a" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "margin-desktop": "2.5rem", "space-sm": "0.5rem", "margin-tablet": "1.5rem", "margin": "1rem", "space-xs": "0.25rem", "gutter-desktop": "1.5rem", "space-xl": "2.5rem", "gutter": "1rem", "space-lg": "1.5rem", "space-md": "1rem" }, "fontFamily": { "label-md": ["Public Sans"], "label-sm": ["Public Sans"], "body-md": ["Public Sans"], "headline-lg": ["Space Grotesk"], "headline-md": ["Space Grotesk"], "label-lg": ["Public Sans"], "body-sm": ["Public Sans"], "display-lg": ["Space Grotesk"], "headline-lg-mobile": ["Space Grotesk"], "headline-sm": ["Space Grotesk"], "title-lg": ["Public Sans"], "title-md": ["Public Sans"], "body-lg": ["Public Sans"] }, "fontSize": { "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.03em", "fontWeight": "600"}], "label-sm": ["11px", {"lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700"}], "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}], "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.015em", "fontWeight": "600"}], "headline-md": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600"}], "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600"}], "body-sm": ["12px", {"lineHeight": "18px", "fontWeight": "400"}], "display-lg": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}], "headline-lg-mobile": ["26px", {"lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "600"}], "headline-sm": ["20px", {"lineHeight": "28px", "fontWeight": "600"}], "title-lg": ["18px", {"lineHeight": "26px", "fontWeight": "600"}], "title-md": ["16px", {"lineHeight": "24px", "fontWeight": "600"}], "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-background font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><button aria-label="Go back" class="w-11 h-11 flex items-center justify-center -ml-2 rounded-full text-on-surface hover:bg-surface-container-high transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><img alt="AgriLink Logo" class="h-7 w-auto object-contain flex-shrink-0 hidden sm:block" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdryaOneto5aYotA6uQjNAQ4C8P9CN5Xklc_4qjItWmxHO2SWFxxXvjHVtoGk48JIqRUVqF3WxRWQdI3bo9iG2s29Li-gG-IFroLa2sIJSyfgnxpW68yKSJyfuSAmrYSUT8ISiRi5S-EbDnsYoFFy86m3Wo5Wv-kSDEIanafdKRCj-rNu14Bq_YymhsGbNqMqzpiAcY26Bwk2z6Gsa9zu6KxARBkZKdkOY95plrqmByBAvS3I7ZhJNrQ"/><h1 class="font-title-lg text-title-lg text-on-surface truncate">Produce Lot Details</h1></div><div class="flex items-center gap-space-xs flex-shrink-0"><span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span>Synced</span><img alt="Profile" class="w-8 h-8 rounded-full object-cover ml-1 shadow-[0_1px_4px_rgba(0,0,0,0.08)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjGpVqcRobJ6dgJqOb6OImerkE_Z6Na2ia4wnP9ggICH2fYk1OwCpcv9IkNZd0KV-ygAw-O1Usu0rjJjsL2vwGd_p52QqDsyeXT3sINDxCKDDc_B2OAatZdSy1eiKbIwZVMdmz_v7bx0lK2eeQp7kPRL7fFFGCjr4Q8bh7-TGajqdX5vo_J_1Fvh2QoCLYQsWfS5dxCKkDzBFpX9dRYKKngLbYoLNpqkNrQvhV5b7qwce4IJPeTLuoGw"/></div></div></header><main class="flex flex-col relative w-full pt-16 pb-safe bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Interactive Script for Filtering & Marking as Read -->
+<script>
+    function filterAlerts(category, el) {
+      document.querySelectorAll('.filter-pill').forEach(pill => {
+        pill.classList.remove('bg-primary-container', 'text-on-primary');
+        pill.classList.add('bg-surface-container-high', 'text-on-surface-variant');
+      });
+      el.classList.remove('bg-surface-container-high', 'text-on-surface-variant');
+      el.classList.add('bg-primary-container', 'text-on-primary');
+
+      const cards = document.querySelectorAll('.notification-card');
+      let visibleCount = 0;
+      cards.forEach(card => {
+        if (category === 'all' || card.dataset.category === category) {
+          card.style.display = 'block';
+          visibleCount++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+      const emptyNotice = document.getElementById('empty-category-state');
+      if (visibleCount === 0) {
+        emptyNotice.classList.remove('hidden');
+      } else {
+        emptyNotice.classList.add('hidden');
+      }
+    }
+
+    function markAllAsRead() {
+      document.querySelectorAll('.unread-dot').forEach(dot => dot.classList.add('hidden'));
+      document.querySelectorAll('.unread-card').forEach(card => {
+        card.classList.remove('bg-surface-container-lowest', 'shadow-md');
+        card.classList.add('bg-surface-container-lowest', 'opacity-95');
+      });
+      const badge = document.getElementById('unread-count-badge');
+      if (badge) {
+        badge.innerText = '0 Unread';
+        badge.classList.remove('bg-secondary-container', 'text-on-secondary-container');
+        badge.classList.add('bg-surface-container-high', 'text-on-surface-variant');
+      }
+      const markBtn = document.getElementById('mark-read-btn');
+      if (markBtn) {
+        markBtn.innerHTML = '<span class="material-symbols-outlined text-[16px] text-primary">done_all</span> All read';
+        markBtn.classList.add('pointer-events-none', 'opacity-70');
+      }
+    }
+  </script>
+<!-- Sticky Sub-Bar with Controls -->
+<section class="sticky top-16 z-30 bg-surface/95 backdrop-blur-md px-margin py-space-sm flex flex-col gap-space-sm shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Market Alerts</h2>
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-secondary-container text-on-secondary-container transition-all" id="unread-count-badge">
+          3 Unread
+        </span>
+</div>
+<button class="flex items-center gap-1 font-label-md text-label-md text-primary-container active:scale-95 transition-transform" id="mark-read-btn" onclick="markAllAsRead()">
+<span class="material-symbols-outlined text-[16px]">done_all</span>
+        Mark all as read
+      </button>
+</div>
+<!-- Filter Pills (Horizontally Scrollable) -->
+<div class="flex items-center gap-space-xs overflow-x-auto no-scrollbar py-0.5">
+<button class="filter-pill flex-shrink-0 px-3 py-1.5 rounded-full font-label-md text-label-md bg-primary-container text-on-primary transition-all" onclick="filterAlerts('all', this)">
+        All (7)
+      </button>
+<button class="filter-pill flex-shrink-0 px-3 py-1.5 rounded-full font-label-md text-label-md bg-surface-container-high text-on-surface-variant transition-all hover:bg-surface-variant" onclick="filterAlerts('prices', this)">
+        Price Trends
+      </button>
+<button class="filter-pill flex-shrink-0 px-3 py-1.5 rounded-full font-label-md text-label-md bg-surface-container-high text-on-surface-variant transition-all hover:bg-surface-variant" onclick="filterAlerts('escrow', this)">
+        Escrow &amp; Orders
+      </button>
+<button class="filter-pill flex-shrink-0 px-3 py-1.5 rounded-full font-label-md text-label-md bg-surface-container-high text-on-surface-variant transition-all hover:bg-surface-variant" onclick="filterAlerts('logistics', this)">
+        Logistics
+      </button>
+<button class="filter-pill flex-shrink-0 px-3 py-1.5 rounded-full font-label-md text-label-md bg-surface-container-high text-on-surface-variant transition-all hover:bg-surface-variant" onclick="filterAlerts('system', this)">
+        System &amp; UNBS
+      </button>
+</div>
+</section>
+<!-- Feed Canvas -->
+<div class="px-margin pt-space-md pb-space-xl flex flex-col gap-space-md">
+<!-- Group: TODAY -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs py-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Today</span>
+<div class="flex-1 h-0.5 bg-surface-container-high rounded-full"></div>
+</div>
+<!-- Item 1: Matooke Surge (Unread, Price Alert) -->
+<article class="notification-card unread-card relative bg-surface-container-lowest rounded-xl p-space-md shadow-sm transition-all overflow-hidden flex flex-col gap-space-xs" data-category="prices">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-primary-container"></div>
+<div class="flex items-start justify-between gap-space-sm pl-1">
+<div class="flex items-center gap-space-xs">
+<span class="w-8 h-8 rounded-full bg-primary-fixed text-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">trending_up</span>
+</span>
+<span class="font-label-sm text-label-sm text-primary px-2 py-0.5 bg-primary-fixed rounded-full">
+              Price Spike
+            </span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="unread-dot w-2 h-2 rounded-full bg-secondary-container"></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">14m ago</span>
+</div>
+</div>
+<div class="pl-1 flex flex-col gap-1">
+<h3 class="font-title-md text-title-md text-on-surface">Matooke Spot Price Spike (+6.8%)</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Masaka Central Depot wholesale rate jumped to <span class="font-title-md text-primary">UGX 1,850/kg</span> due to weekend institutional demand. Consider locking your harvest batch today.
+          </p>
+</div>
+<div class="pl-1 pt-1 flex items-center justify-between border-t-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">storefront</span>
+            Marketplace Feed • Masaka
+          </span>
+<button class="flex items-center gap-1 font-label-md text-label-md text-primary hover:text-primary-container transition-colors py-1 px-2 rounded-lg bg-surface-container-low active:bg-surface-container-high">
+            View Spot Prices
+            <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- Item 2: Escrow Released (Unread, Escrow) -->
+<article class="notification-card unread-card relative bg-surface-container-lowest rounded-xl p-space-md shadow-sm transition-all overflow-hidden flex flex-col gap-space-xs" data-category="escrow">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-secondary"></div>
+<div class="flex items-start justify-between gap-space-sm pl-1">
+<div class="flex items-center gap-space-xs">
+<span class="w-8 h-8 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+</span>
+<span class="font-label-sm text-label-sm text-on-secondary-fixed bg-secondary-fixed rounded-full px-2 py-0.5">
+              Escrow Vault
+            </span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="unread-dot w-2 h-2 rounded-full bg-secondary-container"></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">1h ago</span>
+</div>
+</div>
+<div class="pl-1 flex flex-col gap-1">
+<h3 class="font-title-md text-title-md text-on-surface">Escrow Released: UGX 1,440,000</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Buyer <span class="font-title-md text-on-surface">Crown Agro</span> signed off weighbridge verification for Lot <span class="font-label-md text-primary">#AG-312</span> (1,200 kg Yellow Maize). Payout sent to your registered MTN MoMo account.
+          </p>
+</div>
+<!-- Micro MoMo Trust Strip -->
+<div class="pl-1 flex items-center justify-between bg-surface-container-low p-2 rounded-lg">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-label-sm text-[10px]">
+              MTN
+            </div>
+<span class="font-label-sm text-label-sm text-on-surface truncate">MTN MoMo: +256 772 ••• 419</span>
+</div>
+<button class="font-label-md text-label-md text-secondary-container hover:underline px-2 py-1 flex items-center gap-0.5">
+            Receipt
+            <span class="material-symbols-outlined text-[14px]">receipt_long</span>
+</button>
+</div>
+</article>
+<!-- Item 3: Logistics Transit (Unread, Logistics) -->
+<article class="notification-card unread-card relative bg-surface-container-lowest rounded-xl p-space-md shadow-sm transition-all overflow-hidden flex flex-col gap-space-xs" data-category="logistics">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-primary-container"></div>
+<div class="flex items-start justify-between gap-space-sm pl-1">
+<div class="flex items-center gap-space-xs">
+<span class="w-8 h-8 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">local_shipping</span>
+</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-high rounded-full px-2 py-0.5">
+              Freight Dispatch
+            </span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="unread-dot w-2 h-2 rounded-full bg-secondary-container"></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">3h ago</span>
+</div>
+</div>
+<div class="pl-1 flex flex-col gap-1">
+<h3 class="font-title-md text-title-md text-on-surface">Transit Dispatched: Waybill #AL-9921</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Driver <span class="font-title-md text-on-surface">Peter Semakula</span> (Isuzu Forward, UAZ 412K) loaded 2.5 MT Yellow Maize and departed Kasese Regional Depot en route to Kampala Central Silo.
+          </p>
+</div>
+<div class="pl-1 flex items-center justify-between pt-1">
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span>
+            Live GPS Active
+          </div>
+<button class="font-label-md text-label-md text-primary flex items-center gap-1 hover:underline">
+            Track Manifest
+            <span class="material-symbols-outlined text-[16px]">pin_drop</span>
+</button>
+</div>
+</article>
+</div>
+<!-- Group: YESTERDAY -->
+<div class="flex flex-col gap-space-sm pt-2">
+<div class="flex items-center gap-space-xs py-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Yesterday</span>
+<div class="flex-1 h-0.5 bg-surface-container-high rounded-full"></div>
+</div>
+<!-- Item 4: Aggregation Pool Milestone (Read, Cooperative Hub) -->
+<article class="notification-card relative bg-surface-container-lowest rounded-xl p-space-md shadow-sm transition-all overflow-hidden flex flex-col gap-space-xs opacity-95" data-category="escrow">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-8 h-8 rounded-full bg-tertiary-fixed text-tertiary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">groups</span>
+</span>
+<span class="font-label-sm text-label-sm text-on-tertiary-fixed-variant bg-tertiary-fixed rounded-full px-2 py-0.5">
+              Cooperative Hub
+            </span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">4:15 PM</span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="font-title-md text-title-md text-on-surface">Uganda Breweries 50T Sorghum Pool: 85% Full</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Only 7.5 MT remaining before bulk batch collection concludes. Guaranteed minimum depot gate payout: <span class="font-title-md text-primary">UGX 1,600/kg</span>.
+          </p>
+</div>
+<!-- Progress Gauge -->
+<div class="flex flex-col gap-1.5 bg-surface-container-low p-2.5 rounded-lg">
+<div class="flex justify-between items-center font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Aggregation Progress</span>
+<span class="font-title-md text-primary">42.5 / 50 MT (85%)</span>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 85%"></div>
+</div>
+</div>
+<div class="flex justify-end pt-1">
+<button class="font-label-md text-label-md text-primary flex items-center gap-1 hover:underline">
+            Join Aggregation Pool
+            <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</article>
+<!-- Item 5: Weather Advisory (Read, Extension) -->
+<article class="notification-card relative bg-surface-container-lowest rounded-xl p-space-md shadow-sm transition-all overflow-hidden flex flex-col gap-space-xs opacity-95" data-category="system">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-8 h-8 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">cloud_sync</span>
+</span>
+<span class="font-label-sm text-label-sm text-on-secondary-fixed-variant bg-secondary-fixed rounded-full px-2 py-0.5">
+              Extension Services
+            </span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">11:20 AM</span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="font-title-md text-title-md text-on-surface">Heavy Rainfall Advisory: Mt. Elgon &amp; Mbale</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Torrential afternoon rains predicted for next 48 hours. Ensure sun-dried Arabica coffee parchment is transferred to waterproof tarpaulin storage to keep moisture &lt; 12%.
+          </p>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm pt-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">water_drop</span>
+          Mbale Agro-Met Station • 88% Humidity alert
+        </div>
+</article>
+</div>
+<!-- Group: EARLIER THIS WEEK -->
+<div class="flex flex-col gap-space-sm pt-2">
+<div class="flex items-center gap-space-xs py-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Earlier This Week</span>
+<div class="flex-1 h-0.5 bg-surface-container-high rounded-full"></div>
+</div>
+<!-- Item 6: UNBS Regulation (Read, System) -->
+<article class="notification-card relative bg-surface-container-lowest rounded-xl p-space-md shadow-sm transition-all overflow-hidden flex flex-col gap-space-xs opacity-95" data-category="system">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-8 h-8 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-high rounded-full px-2 py-0.5">
+              UNBS Regulation
+            </span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">3 days ago</span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="font-title-md text-title-md text-on-surface">Updated Moisture Standards for Export Maize</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Kampala Central Hub now requires certified digital moisture tester verification strictly below <span class="font-title-md text-on-surface">13.0%</span> for Grade 1 export contracts. Lots with 13.1%–14.5% will be routed to local feed mills.
+          </p>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">UNBS Standard Rev. 2024-C</span>
+<button class="font-label-md text-label-md text-primary hover:underline">
+            Read Standard
+          </button>
+</div>
+</article>
+<!-- Item 7: Offline Backup Mode (Read, Platform Notice) -->
+<article class="notification-card relative bg-surface-container-lowest rounded-xl p-space-md shadow-sm transition-all overflow-hidden flex flex-col gap-space-xs opacity-95" data-category="system">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-8 h-8 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">phonelink_setup</span>
+</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-high rounded-full px-2 py-0.5">
+              System Operations
+            </span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">4 days ago</span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="font-title-md text-title-md text-on-surface">Offline SMS &amp; USSD Backup Mode Active</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Depot inventory locks and mobile bidding via <span class="font-title-md text-primary">*284*44#</span> remain permanently available even during scheduled Sunday 02:00 AM cloud database synchronization.
+          </p>
+</div>
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm pt-1">
+<span class="material-symbols-outlined text-[16px] text-primary">check_circle</span>
+          Zero-Data USSD Gateway active for MTN &amp; Airtel
+        </div>
+</article>
+</div>
+<!-- Empty State Placeholder (for zero filter matches) -->
+<div class="hidden flex flex-col items-center justify-center py-space-xl text-center gap-space-sm" id="empty-category-state">
+<div class="w-16 h-16 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant mb-1">
+<span class="material-symbols-outlined text-[32px]">notifications_paused</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface">No alerts in this category</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs">
+        Your trade feed is calm. Check other tabs or pull down to check new depot signals.
+      </p>
+</div>
+<!-- Bottom Advisory / Footer Information -->
+<div class="mt-space-md p-space-md rounded-xl bg-surface-container-low flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px] flex-shrink-0 mt-0.5">info</span>
+<div class="flex flex-col gap-1">
+<span class="font-label-md text-label-md text-on-surface">Instant SMS Alert Settings</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Critical price changes (+/- 5%) and escrow releases are mirrored to your registered mobile phone via zero-rated SMS.
+        </p>
+<button class="font-label-sm text-label-sm text-primary hover:underline text-left mt-0.5">
+          Configure SMS Notification Preferences →
+        </button>
+</div>
+</div>
+</div>
+</div></main></body></html>
